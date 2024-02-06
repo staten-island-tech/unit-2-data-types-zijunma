@@ -11,4 +11,43 @@ for i in values:
 print(values[0])
 print(values[6]) """
 
-give
+""" 
+
+day_of_week = input("what day is it?")
+if day_of_week == "Friday":
+    print("incorrect")
+else:
+   print("correct") """
+   
+
+
+
+""" number = 3
+if number == 2:
+    print('even')
+elif number == 4:
+    print('even')
+elif number == 6:
+    print('even')
+elif number == 8:
+    print('even')
+elif number == 10:
+    print('even')
+else: 
+    print('odd') """
+
+x = "test"
+print(f"hello {x}")
+
+service: Bad
+bill = input("service:")
+if service == ("Bad"):
+    print("0")
+elif service == ("Okay"):
+    print("15")
+elif service == ("Good"):
+    print("20")
+elif service == ("Great"):
+    print("25")
+else: 
+    print('cold')
