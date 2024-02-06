@@ -36,14 +36,26 @@ elif number == 10:
 else: 
     print('odd') """
 
-service = input("rate service (Bad, Okay, Good, Great): ")
-if service.lower() == "bad":
-    tip
-elif service.lower() == "okay":
-    print("15")
-elif service.lower() == "good":
-    print("20")
-elif service.lower() == "great":
-    print("25")
-else:
-    print("invalid")
+def calculate_tip(bill, service_quality):
+    if service_quality == "bad":
+        tip = 0
+    elif service_quality == "okay":
+        tip = 0.15
+    elif service_quality == "good":
+        tip = 0.20
+    elif service_quality == "great":
+        tip = 0.25
+    else:
+        print("invalid")
+
+    total_bill = bill + (bill * tip)
+    print(total_bill)
+    
+#use
+bill_amount = 45
+service = "good"
+total_bill = calculate_tip(bill_amount, service)
+
+
+
+

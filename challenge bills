@@ -1,0 +1,18 @@
+def calculate_tip(bill, service_quality):
+    if service_quality == "bad":
+        tip = 0
+    elif service_quality == "okay":
+        tip = 0.15
+    elif service_quality == "good":
+        tip = 0.20
+    elif service_quality == "great":
+        tip = 0.25
+    else:
+        print("invalid")
+
+    total_bill = bill + (bill * tip)
+    print(total_bill)
+
+bill_amount = 45
+service = "good"
+total_bill = calculate_tip(bill_amount, service)
