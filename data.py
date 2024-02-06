@@ -36,18 +36,14 @@ elif number == 10:
 else: 
     print('odd') """
 
-x = "test"
-print(f"hello {x}")
-
-service: Bad
-bill = input("service:")
-if service == ("Bad"):
-    print("0")
-elif service == ("Okay"):
+service = input("rate service (Bad, Okay, Good, Great): ")
+if service.lower() == "bad":
+    tip
+elif service.lower() == "okay":
     print("15")
-elif service == ("Good"):
+elif service.lower() == "good":
     print("20")
-elif service == ("Great"):
+elif service.lower() == "great":
     print("25")
-else: 
-    print('cold')
+else:
+    print("invalid")
