@@ -13,6 +13,6 @@ def calculate_tip(bill, service_quality):
     total_bill = bill + (bill * tip)
     print(total_bill)
 
-bill_amount = 45
-service = "good"
+bill_amount = 75
+service = "bad"
 total_bill = calculate_tip(bill_amount, service)
