@@ -1,4 +1,4 @@
-number = 5
+""" number = 5
 if number == 2:
     print('even')
 elif number == 4:
@@ -10,4 +10,12 @@ elif number == 8:
 elif number == 10:
     print('even')
 else: 
-    print('odd') 
+    print('odd')  """
+ 
+def check_if_odd_even(number):
+    if number % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+
+results = check_if_odd_even(56)
