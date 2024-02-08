@@ -1,21 +1,7 @@
-""" number = 5
-if number == 2:
-    print('even')
-elif number == 4:
-    print('even')
-elif number == 6:
-    print('even')
-elif number == 8:
-    print('even')
-elif number == 10:
-    print('even')
-else: 
-    print('odd')  """
- 
-def check_if_odd_even(number):
-    if number % 2 == 0:
+def if_odd_even(x):
+    if x % 2 == 0:
         print("even")
     else:
         print("odd")
 
-results = check_if_odd_even(56)
+if_odd_even("45")

@@ -1,14 +1,19 @@
 x = "here is your bill"
 print(f"hello {x}")
+
 def calculate_tip(bill, service_quality):
     if service_quality == "bad":
         tip = 0
+        print("no tip")
     elif service_quality == "okay":
         tip = 0.15
+        print("15% tip")
     elif service_quality == "good":
         tip = 0.20
+        print("20% tip")
     elif service_quality == "great":
         tip = 0.25
+        print("25% tip")
     else:
         print("invalid")
 
@@ -16,5 +21,11 @@ def calculate_tip(bill, service_quality):
     print(total_bill)
 
 bill_amount = 10
-service = "good"
+service = "great"
 total_bill = calculate_tip(bill_amount, service)
+
+
+
+
+
+
