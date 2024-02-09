@@ -4,4 +4,4 @@ def if_odd_even(x):
     else:
         print("odd")
 
-if_odd_even("45")
+if_odd_even(65)
