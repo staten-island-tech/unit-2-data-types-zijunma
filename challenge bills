@@ -23,25 +23,21 @@ total_bill = calculate_tip(bill_amount, service)  """
 
 
 bill = (input("Bill:"))
-service = (input("service:"))
-if service == "bad":
+Service = (input("Service:"))
+if Service == "bad":
         tip = 0
         print("no tip")
-elif service == "okay":
+elif Service == "okay":
         tip = 0.15
         print("15% tip")
-elif service == "good":
+elif Service == "good":
         tip = 0.20
         print("20% tip")
-elif service == "great":
+elif Service == "great":
         tip = 0.25
         print("25% tip")
 else:
         print("invalid")
 
-
-
-
-
-total_bill = (bill * tip) + bill
-print(total_bill)
+total_bill = float(bill) + (float(bill)* tip )
+print(f"Total amount paid: {total_bill} dollars")

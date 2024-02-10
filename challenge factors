@@ -7,6 +7,6 @@ def print_factors(x):
     if number == 0:
         print("Factors of 0 don't exist!")
 
-number = 6
+number = 56
 print_factors(number)
 
