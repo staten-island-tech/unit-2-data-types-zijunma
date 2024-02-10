@@ -37,7 +37,7 @@ elif Service == "great":
         tip = 0.25
         print("25% tip")
 else:
-        print("invalid")
+        print("Invalid")
 
 total_bill = float(bill) + (float(bill)* tip )
 print(f"Total amount paid: {total_bill} dollars")

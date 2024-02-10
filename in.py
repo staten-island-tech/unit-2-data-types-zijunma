@@ -3,4 +3,4 @@ def check(name, mons):
     if(name in mons):
         print(name)
 
-check("squirtle", pokemon)
+check("gengar", pokemon)
