@@ -8,5 +8,5 @@ def find_gcf(num1,num2):
 num1 = int(input("First Number:"))
 num2 = int(input("Second Number:"))
 
-gcf = find_gcf()
-
+gcf = find_gcf(num1 , num2)
+print([gcf])
