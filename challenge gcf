@@ -6,5 +6,5 @@ def find_gcf(num1,num2):
         num1, num2 = num2, num2 % num1
     print(num1)
 
-find_gcf(24,36)
+find_gcf(5,5)
 

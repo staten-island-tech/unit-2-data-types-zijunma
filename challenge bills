@@ -20,8 +20,6 @@
 bill_amount = 10
 service = "great"
 total_bill = calculate_tip(bill_amount, service)  """
-
-
 bill = (input("Bill:"))
 Service = (input("Service:"))
 if Service == "bad":
