@@ -1,9 +1,12 @@
 def find_gcf(num1,num2):
-    while num2: 
-        num1, num2 = num2 , num1 % num2
-    print([num1])
+     if num1 < num2:
+        num1 , num2 = num2 , num1
+     while num2  !=0:
+        temp = num2
+        num2 = num1 % num2
+        num1 = temp 
 
-num1 = int(input("first number:"))
-num2 = int(input("second number:"))
+print (["num1"])
 
-gcf = find_gcf(1,2)
+num1 = (input("First Number:"))
+num2 = (input("Second Number:"))
