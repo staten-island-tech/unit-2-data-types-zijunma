@@ -1,7 +1,7 @@
 
-bill = int(input("Bill:"))
+bill = int(input("Bill: " ))
 service = (input("service:"))
-
+tip = 0
 if service == "bad":
         tip = 0
         print("no tip")
