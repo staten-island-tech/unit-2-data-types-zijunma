@@ -6,9 +6,9 @@ def find_gcf(x,y):
    for i in range(1, variable1 + 1):
       if((x % i == 0) and (y % i == 0)):
          gcf = i
-   print([gcf])
+   return [gcf]
 
-x = int(input("number 1:"))
-y = int(input("number 2:"))
+x = 12
+y = 45
 print ("The gcf of your numbers is:")
 print (find_gcf(x,y))
