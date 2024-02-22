@@ -21,7 +21,7 @@ def calculate_remaining_hunger(initial_hunger_points, apples_eaten, hunger_gaine
 max_hunger_points = (100)
 initial_hunger_points = int(input("Initial Hunger Points:"))
 apples_eaten = int(input("Apples Eaten:"))
-hunger_gained_per_apple = (1)
+hunger_gained_per_apple = (6)
 hunger_lost_per_second = (3)
 waiting_seconds = int(input("Seconds Waiting:"))
  
