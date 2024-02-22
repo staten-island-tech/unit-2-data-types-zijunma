@@ -3,7 +3,8 @@ def if_odd_even(x):
         print("even")
     else:
         print("odd")
-if_odd_even(79876)
+
+if_odd_even(456789)
 
 
 

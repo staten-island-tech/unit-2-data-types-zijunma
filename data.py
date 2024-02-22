@@ -18,11 +18,8 @@ if day_of_week == "Friday":
     print("incorrect")
 else:
    print("correct") """
-   
 
-
-
-""" number = 3
+""" number = 5
 if number == 2:
     print('even')
 elif number == 4:
@@ -34,9 +31,9 @@ elif number == 8:
 elif number == 10:
     print('even')
 else: 
-    print('odd') """
+    print('odd')  """
 
-def calculate_tip(bill, service_quality):
+""" def calculate_tip(bill, service_quality):
     if service_quality == "bad":
         tip = 0
     elif service_quality == "okay":
@@ -50,12 +47,9 @@ def calculate_tip(bill, service_quality):
 
     total_bill = bill + (bill * tip)
     print(total_bill)
-    
-#use
+
 bill_amount = 45
 service = "good"
-total_bill = calculate_tip(bill_amount, service)
-
-
+total_bill = calculate_tip(bill_amount, service) """
 
 
