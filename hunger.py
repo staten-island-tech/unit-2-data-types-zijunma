@@ -12,7 +12,7 @@ def calculate_remaining_hunger(initial_hunger_points, apples_eaten, hunger_gaine
  
     total_hunger_points_lost = hunger_lost_per_second * waiting_seconds
 
-# calculate the final hunger level
+# calculating the final hunger level
 
     remaining_hunger_points = max(0, initial_hunger_points + total_hunger_points_gained - total_hunger_points_lost)
 

@@ -1,14 +1,14 @@
 def find_gcf(x,y):
    if x > y:
-      variable1 = y
+      var = y
    else:
-      variable1 = x
-   for i in range(1, variable1 + 1):
+      var = x
+   for i in range(1, var + 1):
       if((x % i == 0) and (y % i == 0)):
          gcf = i
    return [gcf]
 
-x = 12
-y = 45
-print ("The gcf of your numbers is:")
-print (find_gcf(x,y))
+x = int(input("Your first number is:"))
+y = int(input("Your second number is:"))
+print ("The gcf of your numbers is:", find_gcf(x,y))
+

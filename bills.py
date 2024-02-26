@@ -1,6 +1,6 @@
 
 bill = int(input("Bill: " ))
-service = (input("service:"))
+service = (input("Service: "))
 tip = 0
 if service == "bad":
         tip = 0
