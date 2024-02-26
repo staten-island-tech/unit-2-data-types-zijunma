@@ -17,7 +17,5 @@ def guess_number():
             print("Your guess was too low, try again")
         else:
             print("Your guess was too high, try again")
-
 guess_number()
     
-
