@@ -12,7 +12,6 @@ def guess_number():
         if guess == random_number:
             print("Congrats! You guessed correctly")
             print("Guess history:", guess_history)
-            break
         elif guess < random_number:
             print("Your guess was too low, try again")
         else:
