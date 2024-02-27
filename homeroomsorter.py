@@ -1,14 +1,29 @@
-last_name = input("Whats your last name:")
-splitting_lastname = last_name.split( )
-first_initial = splitting_lastname[0]
+# Program 1
+""" last_name = input("Whats your full name:")
+first_initial = last_name[0]
+homeroom = ''
 
-
-
-
-
-if first_initial == ("A"):
-    print("Your homeroom is 101")
-elif first_initial == ("B"):
-    print("Your homeroom is 102")
+if first_initial.lower() == 'a':
+    homeroom = 101
+elif first_initial.lower() == 'b':
+    homeroom = 102
 else:
-    print("Your homeroom is 103")
+    homeroom = 103
+
+print(f"Last Name: {last_name}")
+print(f"Homeromm: {homeroom}")
+ """
+# Program 2
+last_name = input("Whats your full name:")
+first_initial = last_name[0]
+homeroom = ''
+
+if first_initial.lower() in 'abcdefgh':
+    homeroom = 101
+elif first_initial.lower() in 'ijklmnop':
+    homeroom = 102
+else:
+    homeroom = 103
+
+print(f"Last Name: {last_name}")
+print(f"Homeromm: {homeroom}")
