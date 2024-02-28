@@ -14,7 +14,7 @@ print(f"Last Name: {last_name}")
 print(f"Homeromm: {homeroom}")
  """
 # Program 2
-last_name = input("Whats your full name:")
+last_name = input("Whats your Last Name:")
 first_initial = last_name[0]
 homeroom = ''
 
@@ -24,6 +24,5 @@ elif first_initial.lower() in 'ijklmnop':
     homeroom = 102
 else:
     homeroom = 103
-
 print(f"Last Name: {last_name}")
 print(f"Homeromm: {homeroom}")
