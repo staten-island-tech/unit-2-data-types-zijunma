@@ -6,7 +6,6 @@ if first_initial.lower() == 'a':
     homeroom = 101
 elif first_initial.lower() == 'b':
     homeroom = 102
->>>>>>> afcc97cf16390abf3b537bc55779557eab3ddced
 else:
     homeroom = 103
 
