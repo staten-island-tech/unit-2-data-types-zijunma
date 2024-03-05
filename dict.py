@@ -12,10 +12,5 @@ book_list = [ {
     'writer': ["William Shakespeare"]
 }]
 def print_dictionary(data):
-    for book in data:
-        print(f"Title:{book['title']}")
-        print(f"Genre:{book['genre']}")
-   
-        for writer in book['writer']:
-            print(f"Writer:{book['writer']}")
+print()
 print_dictionary(book_list)
