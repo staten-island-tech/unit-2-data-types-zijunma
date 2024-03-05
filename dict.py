@@ -15,8 +15,7 @@ def print_dictionary(data):
     for book in data:
         print(f"Title:{book['title']}")
         print(f"Genre:{book['genre']}")
-        print("Writers:")    
+   
         for writer in book['writer']:
-            print("f - {author}")
-            print("\n")
+            print(f"Writer:{book['writer']}")
 print_dictionary(book_list)
