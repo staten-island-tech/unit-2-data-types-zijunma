@@ -1,8 +1,8 @@
 
 student = {
-"name" = input("Whats your name:")
-"class" = input("Whats your class:")
-"grades"= int(input("Grades:"))
+    'name': "Sidh Gupta",
+    'class': "101",
+    'grades':[90, 86, 76]
 }
 
 def calc_average(grades):
