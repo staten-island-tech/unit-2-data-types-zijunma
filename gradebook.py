@@ -16,7 +16,7 @@ student = {
     'class_name': class_name, 
     'grades': grade
 }
-
+#average grade calcs
 average_grade = calc_average(student["grades"])
 
 #printing information
