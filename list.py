@@ -11,7 +11,7 @@ else:
 def maxWealth(accounts):
     max_wealth = 0 
     for customer in accounts: 
-        wealth = sum(accounts)
+        wealth = sum(customer)
         max_wealth = max(max_wealth, wealth)
     return wealth
-print(maxWealth([[1,2,3],[3,2,1]]))
+print(maxWealth([[3,2,1], [45,4,3], [67,5,4], [67,6,7]]))
