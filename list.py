@@ -8,11 +8,10 @@ elif (sum(y[1])) > (sum(y[0])) and (sum(y[1])) > (sum(y[2])):
 else: 
     print("Customer 3 is the richest") """
 
-def max_bank(accounts):
+def maxWealth(accounts):
     max_wealth = 0 
     for customer in accounts: 
         wealth = sum(accounts)
         max_wealth = max(max_wealth, wealth)
     return wealth
-
-accounts = [['1','2','3','4'], ["5", "6", "7"], ['1','2']]
+print(maxWealth([[1,2,3],[3,2,1]]))
