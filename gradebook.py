@@ -18,13 +18,11 @@ student = {
 #average grade calcs
 average_grade = calc_average(student["grades"])
 #printing information
-print("Student Name:", name)
-print("Class:", class_name)
-print("Your average is:", average_grade)
 
-
-
-
-
-
-
+# adding more students
+continue_adding_students = input("do you want to keep adding students:")
+if continue_adding_students == 'Yes':
+    inputingmorestudents = input("Input their names:")
+    inputingmoreclasses = input("Input their classes")    
+    grade_calcingformoregrades = grade_str
+    
