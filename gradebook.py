@@ -1,9 +1,10 @@
-# calculate grades 
+ # calculate grades 
 def calc_average(grades):
     total = sum(grades)
     average = total / len(grades)
     return average
 #student inputs
+
 name = input("What is your name:")
 class_name = input("Whats your class:")
 # input grades
@@ -15,14 +16,18 @@ student = {
     'class_name': class_name, 
     'grades': grade
 }
-#average grade calcs
-average_grade = calc_average(student["grades"])
-#printing information
+#
+def create_student(grade, name, classes, avg):
+    avg = calc_average(grade)
+    return {
+        'name': name,
+        'classes': classes,
+        'grades': grade,
+        'avg': avg 
 
+     }
 # adding more students
-continue_adding_students = input("do you want to keep adding students:")
-if continue_adding_students == 'Yes':
-    inputingmorestudents = input("Input their names:")
-    inputingmoreclasses = input("Input their classes")    
-    grade_calcingformoregrades = grade_str
-    
+continue_addingmore ='Y'
+students_list = []
+
+#
