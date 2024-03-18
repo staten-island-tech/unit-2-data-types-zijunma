@@ -12,5 +12,12 @@ book_list = [ {
     'writer': ["William Shakespeare"]
 }]
 def print_dictionary(data):
-print()
-print_dictionary(book_list)
+    for entry in data:
+        print("Title:", entry['title'])
+        print("Genre:", entry['genre'])
+        print("Writer:", ", ".join(entry['writer']))
+        print()
+    print_dictionary(data)
+
+userinput = input("Enter print:")
+userinput.lower() == "print:" 
