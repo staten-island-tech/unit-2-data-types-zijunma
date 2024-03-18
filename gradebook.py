@@ -1,42 +1,24 @@
+student_list = []
 def calculate_grades(grades):
-    if not grades:
-        return 0
     return sum(grades) / len(grades)
 
-student = { 
-    'name': '',
-    'class': '', 
-    'grade': '', 
-}
 
-def createnewstudent(name, classes, grade):
-    avg_grades = calculate_grades(grade)
-    return { 
-        'name': name, 
-        'class': classes, 
-        'grades': grade,
-        'average': avg_grades 
+continue_addingstudents = "Y"
+while continue_addingstudents == "Y":
+    student_name = input("Input Student Names:")
+    student_classes = input("Input Classes:")
+    student_grades = [int(x) for x in input("Input Grades seperate by commas:").split()]
+
+    student = { 
+        "name": student_name,
+        "classes": student_classes,
+        "grades": student_grades
     }
-def zijun_idiot():
+    student['average'] = calculate_grades(student_grades)
+    student_list.append(student)
 
-    continue_makingstudents = input("Y")
-    student_list = []
-
-    while continue_makingstudents == "Y":
-        student_name = input("Enter the name:")
-        student_class = input("Enter your class:")
-        student_grades = input("Enter grades separated with commas:").split(',')
-        student_grades = [int(grade) for grade in student_grades]
-
-        new_student = createnewstudent(student_name, student_class, student_grades)
-        student_list.append(new_student)
-
-    for student in student_list:
-        print("Name:", student["name"])
-        print("Class:", student["class"])
-        print("Grades:", student["grades"])
-        print("Average:", student["average"])
-        print()
-
-continue_makingstudents = input("Do you want to keep adding more students:")
-print("Program has ended")
+    continue_addingstudents = input("Would you like to keep adding students Y/N: ")
+for student in student_list:
+    print("Student:", student["name"])
+    print("Classes:", student["classes"])
+    print("Grades:", student["grades"])

@@ -16,8 +16,4 @@ def print_dictionary(data):
         print("Title:", entry['title'])
         print("Genre:", entry['genre'])
         print("Writer:", ", ".join(entry['writer']))
-        print()
     print_dictionary(data)
-
-userinput = input("Enter print:")
-userinput.lower() == "print:" 
