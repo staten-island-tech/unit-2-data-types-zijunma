@@ -1,13 +1,6 @@
 students_list = []
-def get_classaverage(students_list):
-    all_grades = [student['grades'] for student in students_list]
-    flatten_grades = []
-    for grades in all_grades:
-        flatten_grades.extend(grades)
-    class_average = calculate_average(flatten_grades)
-    return class_average
-class_average = get_classaverage(students_list)
-print("Class Average:", class_average)
+
+
 def calculate_average(grades):
     return sum(grades) / len(grades)
 def createstudent(name, student_class, grades):
@@ -29,8 +22,13 @@ while continue_addingstudents == "Y":
     students_list.append(new_student)
 
     continue_addingstudents = input("add more grades? : ").upper()
+def get_classaverage(students_list):
+    all_grades = [student['grades'] for student in students_list]
+    flatten_grades = []
+    for grades in all_grades:
+        flatten_grades.extend(grades)
+   
 for student in students_list:
     print(student)
-
-
+  
 
