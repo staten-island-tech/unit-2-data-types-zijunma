@@ -1,24 +1,36 @@
-student_list = []
-def calculate_grades(grades):
+students_list = []
+def get_classaverage(students_list):
+    all_grades = [student['grades'] for student in students_list]
+    flatten_grades = []
+    for grades in all_grades:
+        flatten_grades.extend(grades)
+    class_average = calculate_average(flatten_grades)
+    return class_average
+class_average = get_classaverage(students_list)
+print("Class Average:", class_average)
+def calculate_average(grades):
     return sum(grades) / len(grades)
-
-
+def createstudent(name, student_class, grades):
+    average_grades = calculate_average(grades)
+    new_student = {
+        'Name': name,
+        'Class': student_class,
+        'Grades': grades,
+        'Average': average_grades
+    }
+    return new_student
 continue_addingstudents = "Y"
 while continue_addingstudents == "Y":
-    student_name = input("Input Student Names:")
-    student_classes = input("Input Classes:")
-    student_grades = [int(x) for x in input("Input Grades seperate by commas:").split()]
+    student_name = input("Enter student name: ")
+    student_class = input("Enter student class: ")
+    student_grades = [int(x) for x in input("Enter student grades seperate using commas: ").split(",")]
 
-    student = { 
-        "name": student_name,
-        "classes": student_classes,
-        "grades": student_grades
-    }
-    student['average'] = calculate_grades(student_grades)
-    student_list.append(student)
+    new_student = createstudent(student_name, student_class, student_grades)
+    students_list.append(new_student)
 
-    continue_addingstudents = input("Would you like to keep adding students Y/N: ")
-for student in student_list:
-    print("Student:", student["name"])
-    print("Classes:", student["classes"])
-    print("Grades:", student["grades"])
+    continue_addingstudents = input("add more grades? : ").upper()
+for student in students_list:
+    print(student)
+
+
+
