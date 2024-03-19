@@ -1,48 +1,36 @@
-# Initialize the students list
-students = []
-
-# Function to calculate the average of a list of grades
+students_list = []
+def get_classaverage(students_list):
+    all_grades = [student['grades'] for student in students_list]
+    flatten_grades = []
+    for grades in all_grades:
+        flatten_grades.extend(grades)
+    class_average = calculate_average(flatten_grades)
+    return class_average
+class_average = get_classaverage(students_list)
+print("Class Average:", class_average)
 def calculate_average(grades):
     return sum(grades) / len(grades)
-
-# Function to create a new student dictionary
-def create_student(name, student_class, grades):
-    average_grade = calculate_average(grades)
+def createstudent(name, student_class, grades):
+    average_grades = calculate_average(grades)
     new_student = {
-        'name': name,
-        'class': student_class,
-        'grades': grades,
-        'average': average_grade
+        'Name': name,
+        'Class': student_class,
+        'Grades': grades,
+        'Average': average_grades
     }
     return new_student
+continue_addingstudents = "Y"
+while continue_addingstudents == "Y":
+    student_name = input("Enter student name: ")
+    student_class = input("Enter student class: ")
+    student_grades = [int(x) for x in input("Enter student grades seperate using commas: ").split(",")]
 
-# While loop to continually input new student data
-continue_adding_students = "Y"
-while continue_adding_students == "Y":
-    student_name = input("Enter student's name: ")
-    student_class = input("Enter student's class: ")
-    student_grades = [int(x) for x in input("Enter student's grades separated by space: ").split()]
+    new_student = createstudent(student_name, student_class, student_grades)
+    students_list.append(new_student)
 
-    new_student = create_student(student_name, student_class, student_grades)
-    students.append(new_student)
-
-    print("Student added:", new_student)
-
-    continue_adding_students = input("Do you want to continue adding students? (Y/N): ").upper()
-
-# Print all the students one at a time from the list
-for student in students:
+    continue_addingstudents = input("add more grades? : ").upper()
+for student in students_list:
     print(student)
 
-# Function to get the class average
-def get_class_average(students_list):
-    all_grades = [student['grades'] for student in students_list]
-    flattened_grades = []
-    for grades in all_grades:
-        flattened_grades.extend(grades)
-    class_average = calculate_average(flattened_grades)
-    return class_average
 
-# Calculate and print the class average
-class_average = get_class_average(students)
-print("Class Average:", class_average)
+
