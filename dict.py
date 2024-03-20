@@ -3,13 +3,11 @@ book_list = [
     'title': "Pride and Punishment",
     'genre': "Romance",
     'writer': ["Jane Austen, Anna Quindlen"]
-    }, 
-    { 
+    },{
     'title': "Crime and Punishment",
     'genre': "Philosophy",
     'writer': ["Fyodor Dostoevsky"]
-    }, 
-    {
+    },{
     'title': "Hamlet",
     'genre': "Drama",
     'writer': ["William Shakespeare"]
