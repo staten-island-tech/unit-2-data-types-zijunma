@@ -1,3 +1,4 @@
+#student list
 students_list = []
 def calculate_average(grades):
     total = sum(grades)

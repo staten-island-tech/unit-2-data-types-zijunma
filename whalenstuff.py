@@ -16,4 +16,4 @@ class Movie():
 
 Star_Wars = Movie("Star Wars", 1977, ['Sci-Fi'])
 Avengers = Movie("Avengers", 2014, ['Comic'])
-print(Avengers)
+print(Avengers.how_old())
